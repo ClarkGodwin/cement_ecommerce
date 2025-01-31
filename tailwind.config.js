@@ -1,0 +1,47 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
+    ],
+    darkMode: 'class',
+    theme: {
+        extend: {
+            fontFamily: {
+                'sans': ['Figtree', ...defaultTheme.fontFamily.sans],
+                'raleway': ['Raleway', ...defaultTheme.fontFamily.sans],
+                'akaya': ['Akaya', ...defaultTheme.fontFamily.sans],
+                'roboto': ['Roboto', ...defaultTheme.fontFamily.sans],
+                'wittgenstein': ['Wittgenstein', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                'gray': '#f0f0f0',
+               'gray_text': '#a9a9a9', 
+               'dark_blue': '#171923',
+               'blue': '#1e2132',
+            },
+            borderRadius: {
+                'default': "8px",
+                'double': "16px",
+                'triple': "24px",
+                'none': "0px",
+            },
+            screens:{
+                "sm": "576px",
+                "md": "960px",
+                "lg": "1280px",
+                "xl": "1440px",
+            },
+            gridTemplateColumns:{
+                'custom-2-1-1-1': '2fr 1fr 1fr 1fr',
+            },
+        },
+    },
+    plugins: [],
+};
+
