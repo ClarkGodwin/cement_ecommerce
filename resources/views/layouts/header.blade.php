@@ -42,13 +42,15 @@
 		</section>
 	</header>
 	
-	@yield('content')
+	<content>
+		@yield('content')
+	</content>
 	
 	<footer class="bg-gray dark:bg-blue text-black dark:text-white py-[170px] md:py-[150px] relative">
-		<section id="newsletter" class="bg-black text-white absolute top-[-110px] md:top-[-80px] h-[220px] md:h-[160px] rounded-double py-[20px] md:py-[35px] px-[6%] sm:px-[10%] md:px-10 xl:px-20 flex flex-col md:flex-row justify-between">
+		<section id="newsletter" class="bg-black text-white absolute top-[-110px] md:top-[-85px] h-[220px] md:h-[170px] rounded-double py-[20px] md:py-[35px] px-[6%] sm:px-[10%] md:px-10 xl:px-20 flex flex-col md:flex-row justify-between">
 			<p class="text-[18px]  sm:text-[23px]  md:text-[27px] lg:text-[30px] xl:text-[35px] w-[70%] lg:w-full md:w-[50%] font-roboto">Rester à jour avec toutes les nouveautés que nous proposons</p>
 
-			<form action="" class="flex flex-col gap-3 md:justify-between md:w-[35%] lg:w-[30%] text-[15px] sm:text-[17px]">
+			<form action="" class="flex flex-col gap-3 md:justify-between md:w-[35%] lg:w-[55%] text-[15px] sm:text-[17px]">
 				<input type="text" name="newsletter" placeholder="Entrer votre e-mail" class="px-5 py-[6px] rounded-double text-black outline-none">
 				<button type="submit" class="bg-white text-black py-[6px] rounded-double">Abonnement au newsletter</button>
 			</form>
@@ -90,7 +92,6 @@
 		</section>
 	</footer>
 
-	<script src="{{mix('js/app.js')}}"></script>
 </body>
 
 </html>

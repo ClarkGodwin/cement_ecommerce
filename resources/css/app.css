@@ -5,29 +5,21 @@
 @font-face {
         font-family: 'Roboto';
         src: url('../../public/Fonts/Roboto/Roboto-Black.ttf');
-        font-weight: normal;
-        font-style: normal;
 }
 
 @font-face {
         font-family: 'Raleway';
         src: url('../../public/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
-        font-weight: normal;
-        font-style: normal;
 }
 
 @font-face {
         font-family: 'Wittgenstein';
         src: url('../../public/Fonts/Wittgenstein/Wittgenstein-VariableFont_wght.ttf');
-        font-weight: normal;
-        font-style: normal;
 }
 
 @font-face {
         font-family: 'Akaya';
         src: url('../../public/Fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf');
-        font-weight: normal;
-        font-style: normal;
 }
 
 @layer base {
@@ -36,7 +28,7 @@
         }
 
         svg {
-                @apply cursor-pointer;
+                @apply cursor-pointer dark:fill-white;
         }
 
         header section div div svg{
@@ -51,8 +43,8 @@
                 @apply font-roboto; 
         }
 
-        footer section:not(:nth-child(1)){
-                @apply w-[95%] sm:w-[90%] md:w-[85%] xl:w-[1250px] mx-auto; 
+        footer section:not(:nth-child(1)), content section > div{
+                @apply w-[95%] sm:w-[90%] md:w-[85%] xl:w-[1350px] mx-auto; 
         }
 
         footer section:nth-child(2) > *{

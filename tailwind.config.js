@@ -20,10 +20,11 @@ export default {
                 'wittgenstein': ['Wittgenstein', ...defaultTheme.fontFamily.sans],
             },
             colors: {
+                'dark_gray': '#a9a9a9',
                 'gray': '#f0f0f0',
-               'gray_text': '#a9a9a9', 
-               'dark_blue': '#171923',
-               'blue': '#1e2132',
+                'gray_text': '#a9a9a9', 
+                'dark_blue': '#111827',
+                'blue': '#1f2937',
             },
             borderRadius: {
                 'default': "8px",
