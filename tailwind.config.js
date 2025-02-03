@@ -2,6 +2,7 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+    prefix: 'tw-',
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
@@ -38,8 +39,17 @@ export default {
                 "lg": "1280px",
                 "xl": "1440px",
             },
-            gridTemplateColumns:{
-                'custom-2-1-1-1': '2fr 1fr 1fr 1fr',
+            // gridTemplateColumns:{
+            //     'custom-2-1-1-1': '2fr 1fr 1fr 1fr',
+            // },
+            animation: {
+                marquee: 'marquee 10s linear infinite',
+            },
+            keyframes:{
+                marquee:{
+                    '0%': {transform: 'translateX(0)'},
+                    '100%': {transform: 'translateX(-100%)'}, 
+                },
             },
         },
     },

@@ -1,3 +1,4 @@
+@import "bootstrap/dist/css/bootstrap.min.css"; 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,50 +25,51 @@
 
 @layer base {
         body {
-                @apply font-wittgenstein;
+                @apply tw-font-wittgenstein;
         }
 
         svg {
-                @apply cursor-pointer dark:fill-white;
+                @apply tw-cursor-pointer dark:tw-fill-white;
         }
 
         header section div div svg{
-                @apply w-[15px] sm:w-[30px] h-[15px] sm:h-[30px] dark:fill-white;
+                @apply tw-w-[15px] sm:tw-w-[30px] tw-h-[15px] sm:tw-h-[30px] dark:tw-fill-white;
         }
 
         input, select, textarea {
-                @apply font-raleway; 
+                @apply tw-font-raleway; 
         }
 
         button{
-                @apply font-roboto; 
+                @apply tw-font-roboto; 
         }
 
         footer section:not(:nth-child(1)), content section > div{
-                @apply w-[95%] sm:w-[90%] md:w-[85%] xl:w-[1350px] mx-auto; 
+                @apply tw-w-[95%] sm:tw-w-[90%] md:tw-w-[85%] xl:tw-w-[1350px] tw-mx-auto; 
         }
 
         footer section:nth-child(2) > *{
-                @apply h-[170px]
+                @apply tw-h-[170px]
         }
 
         footer section:nth-child(2) > div:not(:nth-child(1)) {
-                @apply flex flex-col justify-between 
+                @apply tw-flex tw-flex-col tw-justify-between 
         }
 
         footer section:nth-child(2) div:not(:nth-child(1)) h4{
-                @apply font-raleway font-bold text-[18px] xl:text-[20px]; 
+                @apply tw-font-raleway tw-font-bold tw-text-[18px] xl:tw-text-[20px]; 
         }
 
         footer section:nth-child(2) div:not(:nth-child(1)) ul{
-                @apply flex flex-col gap-1; 
+                @apply tw-flex tw-flex-col tw-gap-1; 
         }
 
-        footer section:nth-child(2) div:not(:nth-child(1)) li{
-                @apply text-gray_text border-b border-transparent hover:border-b-gray_text hover:rounded-[4px] w-fit transition ease-in-out duration-1000; 
+        footer section:nth-child(2) div:not(:nth-child(1)) ul li{
+                @apply tw-text-gray_text tw-border-b tw-border-transparent hover:tw-border-b-gray_text hover:tw-rounded-[4px] tw-w-fit tw-transition tw-ease-in-out tw-duration-1000; 
         }
 
         footer section div div svg{
-                @apply fill-black dark:fill-white w-[30px] h-[30px] border rounded-default  p-[6px] hover:bg-black dark:hover:bg-white hover:fill-white dark:hover:fill-dark_blue transition ease-in-out duration-1000;
+                @apply tw-fill-black dark:tw-fill-white tw-w-[30px] tw-h-[30px] tw-border tw-rounded-default  tw-p-[6px] hover:tw-bg-black dark:hover:tw-bg-white hover:tw-fill-white dark:hover:tw-fill-dark_blue tw-transition tw-ease-in-out tw-duration-1000;
         }
 }
+
